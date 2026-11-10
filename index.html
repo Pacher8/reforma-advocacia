@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reforma Tributária e Advocacia — a cartilha | Gustavo Pacher</title>
+<meta name="description" content="O que a Reforma Tributária muda para sociedades de advogados e para o advogado pessoa física. Cartilha gratuita + calculadora do impacto no seu escritório. Por Gustavo Pacher, advogado tributarista.">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Cartilha gratuita · Edição Santa Catarina · Novembro de 2026</span>
+    <h1>A Reforma Tributária<br>vai mudar o <span class="y">seu escritório</span>.<br>Você já fez as contas?</h1>
+    <p class="sub">Em <b>1º/1/2027</b> a CBS substitui o PIS/Cofins — e a advocacia, que concentra custos em pessoas,
+    está no grupo que mais sente: <b>a folha não gera crédito</b>. Esta cartilha traduz a EC 132, a LC 214 e os atos
+    regulamentares em decisões práticas, com números para quem está começando e para quem já tem sociedade.</p>
+    <div class="hero-stats">
+      <div><strong>−30%</strong><span>redução das alíquotas para a advocacia (art. 127, LC 214)</span></div>
+      <div><strong>≈ 7,9%</strong><span>CBS + IBS da advocacia em 2027, no cenário do TCU</span></div>
+      <div><strong>20/12</strong><span>prazo para <b>cancelar</b> a opção já feita pelo híbrido — quem não optou decide de novo em março/2027</span></div>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-y" href="#cartilha">Quero receber a cartilha</a>
+      <a class="btn btn-ghost" href="#calculadora">Calcular o impacto no meu escritório</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= O QUE VOCÊ ENCONTRA ================= -->
+<section class="sec" id="conteudo">
+  <div class="wrap">
+    <h2><span class="tag">Na cartilha</span>14 capítulos, zero enrolação</h2>
+    <div class="grid3">
+      <div class="card"><h3>O que muda, em uma página</h3><p>Cinco tributos viram um IVA dual. O quadro hoje × amanhã e os mitos que atrapalham.</p></div>
+      <div class="card"><h3>Cronograma 2026–2033</h3><p>Os prazos vigentes — inclusive a janela para <b>cancelar a opção já feita</b> pelo regime da CBS, aberta de 3/11 a 20/12/2026.</p></div>
+      <div class="card"><h3>O “CNPJ técnico”</h3><p>Por que o corte de “R$ 7,5 mil/mês” que circula é falso — e o que a lei realmente exige.</p></div>
+      <div class="card"><h3>PF × SUA, em números</h3><p>32,9% × 14,7% × 28,6%: a simulação completa e o ponto de virada de ≈ R$ 7 mil/mês.</p></div>
+      <div class="card"><h3>Simples, híbrido ou presumido</h3><p>Três regimes em números e o fluxo de decisão pela carteira de clientes.</p></div>
+      <div class="card"><h3>Sucumbência no STJ</h3><p>O que os REsp 2.262.105/SC e 2.261.019/SC decidiram — e a tese que segue viva.</p></div>
+      <div class="card"><h3>Vínculos: CLT, associado, sócio</h3><p>O custo real de cada modalidade por R$ 10 mil de remuneração.</p></div>
+      <div class="card"><h3>Lucros e o novo IRPF</h3><p>Retenção de 10%, IRPFM e a controvérsia do Simples (Lei 15.270/2025).</p></div>
+      <div class="card"><h3>Checklists e método</h3><p>O que fazer agora — sem esperar a alíquota que o Senado fixa até 15/12.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA CARTILHA ================= -->
+<section class="sec sec-dark" id="cartilha">
+  <div class="wrap center">
+    <h2 class="light">Receba a cartilha completa<br><span class="y">gratuitamente</span></h2>
+    <p class="sub-light">Comente <b class="y">ADVOCACIA</b> no post fixado do Instagram <b>@gustavopacher</b>
+    e receba o PDF completo na sua DM — ou acesse pelos links abaixo.</p>
+    <div class="cta-row center">
+      <a class="btn btn-y" href="https://www.instagram.com/gustavopacher/" target="_blank" rel="noopener">Ir para o @gustavopacher</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CALCULADORA ================= -->
+<section class="sec" id="calculadora">
+  <div class="wrap">
+    <h2><span class="tag">Calculadora</span>O impacto da Reforma no seu escritório</h2>
+    <p class="intro">Preencha com doze meses de médias reais (não um mês favorável). O resultado compara os quatro
+    enquadramentos em 2027 com a CBS de <b>11,3%</b> — alíquota de referência calculada pelo <b>TCU</b>, sujeita a
+    alteração pelo Senado até 15/12/2026 — já aplicada a redução de 30% da advocacia (art. 127 da LC 214).</p>
+
+    <form id="calcForm" class="calc-form" onsubmit="return false;">
+      <fieldset>
+        <legend>Receita</legend>
+        <label>Receita mensal média (R$)<input type="number" id="receita" value="30000" min="0" step="500"></label>
+        <label>% da receita que é sucumbência<input type="number" id="sucumbenciaPct" value="0" min="0" max="100" step="1"></label>
+        <label>% de clientes no lucro real/presumido<input type="number" id="carteiraB2BPct" value="40" min="0" max="100" step="5"></label>
+        <p class="field-note"><b>Sucumbência:</b> esta calculadora adota a posição conservadora e inclui a verba na base de
+        cálculo em todos os enquadramentos — no Simples por decisão do STJ (REsp 2.262.105/SC). No regime regular existe a
+        possibilidade de discutir judicialmente a não incidência de IBS/CBS, mas o tema é novo, ainda sem precedentes sobre
+        os novos tributos, e deve render batalha jurídica. Sugestão: incluir no custo, acompanhar a evolução e avaliar a
+        estratégia em cada caso, com seu tributarista.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Equipe</legend>
+        <label>Sócios que retiram pró-labore (capital + serviço)<input type="number" id="socios" value="2" min="0" step="1"></label>
+        <label>Pró-labore mensal por sócio (R$)<input type="number" id="prolaborePorSocio" value="3000" min="0" step="500"></label>
+        <label>Folha CLT mensal (R$)<input type="number" id="folhaCLT" value="0" min="0" step="500"></label>
+        <label>Pagamentos a associados pessoa física (R$/mês)<input type="number" id="assocPF" value="0" min="0" step="500"></label>
+        <label>Pagamentos a associados via SUA/nota (R$/mês)<input type="number" id="assocSUA" value="0" min="0" step="500"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Despesas tributadas (geram crédito no regime regular)</legend>
+        <label>Tecnologia: software, internet, telefonia (R$/mês)<input type="number" id="dTecnologia" value="1500" min="0" step="100"></label>
+        <label>Imóvel: aluguel PJ, energia, condomínio (R$/mês)<input type="number" id="dImovel" value="2500" min="0" step="100"></label>
+        <label>Serviços tomados: terceirizados, limpeza (R$/mês)<input type="number" id="dServicos" value="1000" min="0" step="100"></label>
+        <label>Bens e materiais (R$/mês)<input type="number" id="dBens" value="500" min="0" step="100"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Parâmetros (ajuste se quiser)</legend>
+        <label>ISS no presumido (% da receita, até 2032)<input type="number" id="issPct" value="3" min="0" max="5" step="0.5"></label>
+        <label>ISS fixo mensal do autônomo — PF (R$)<input type="number" id="issPfFixo" value="80" min="0" step="10"></label>
+        <label>Contabilidade — SUA Simples (R$/mês)<input type="number" id="cSimples" value="600" min="0" step="50"></label>
+        <label>Contabilidade — híbrido (R$/mês)<input type="number" id="cHibrido" value="700" min="0" step="50"></label>
+        <label>Contabilidade — presumido (R$/mês)<input type="number" id="cPresumido" value="800" min="0" step="50"></label>
+        <label>Contabilidade — pessoa física (R$/mês)<input type="number" id="cPf" value="0" min="0" step="50"></label>
+      </fieldset>
+
+      <div class="cta-row">
+        <button class="btn btn-navy" id="btnCalcular">Calcular</button>
+        <button class="btn btn-y" id="btnPdf" disabled>Gerar meu diagnóstico em PDF</button>
+      </div>
+    </form>
+
+    <div id="resultados" class="resultados" hidden>
+      <h3 class="res-title">Carga efetiva mensal estimada — 2027</h3>
+      <div class="cenarios" id="cenarios"></div>
+      <div class="res-extra" id="resExtra"></div>
+      <p class="mini-disclaimer">Cenários ilustrativos, premissas didáticas da cartilha (fechamento 7/11/2026): crédito da
+      contabilidade desprezado (conservador), parcela CBS do DAS ≈ 24%, encargos CLT ≈ 54% da folha, INSS teto ≈ R$ 8.475.
+      O resultado <b>não substitui</b> a apuração do seu contador nem o parecer do seu tributarista.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GRÁFICO PF → PJ ================= -->
+<section class="sec sec-gray" id="virada">
+  <div class="wrap">
+    <h2><span class="tag">Gráfico</span>Quando vale sair da PF e virar PJ?</h2>
+    <p class="intro">Abrir a sociedade (SUA) tem custos que a pessoa física não tem: <b>contador todo mês</b>,
+    <b>pró-labore obrigatório</b> (com INSS e IRPF) e o <b>custo de abertura</b>. O gráfico compara o custo mensal
+    total nos dois caminhos em 2027 — CBS de 11,3% (cálculo do TCU, sujeita a alteração pelo Senado), com a redução
+    de 30% da advocacia — e mostra a partir de qual receita a PJ passa a compensar. Mexa nos parâmetros e veja o
+    ponto de virada se mover.</p>
+    <form class="graf-form" onsubmit="return false;">
+      <label>Despesas tributadas (% da receita)<input type="number" id="gDespesasPct" value="15" min="0" max="80" step="5"></label>
+      <label>Contabilidade da PJ (R$/mês)<input type="number" id="gContabPJ" value="600" min="0" step="50"></label>
+      <label>Contabilidade na PF (R$/mês)<input type="number" id="gContabPF" value="0" min="0" step="50"></label>
+      <label>Custo de abertura da sociedade (R$)<input type="number" id="gAbertura" value="2500" min="0" step="250"></label>
+      <label>Diluir a abertura em (meses)<input type="number" id="gAmort" value="24" min="1" step="6"></label>
+      <label>Pró-labore mensal do sócio (R$)<input type="number" id="gProlabore" value="1631" min="0" step="100"></label>
+    </form>
+    <div class="grafico-box">
+      <div id="grafico"></div>
+      <p id="beTexto" class="be-texto"></p>
+    </div>
+    <p class="field-note" style="margin-top:14px">Modelo didático para advogado(a) atuando só: pessoa física no regime
+    regular (INSS de 20% até o teto, carnê-leão, IBS/CBS com redução de 30%, ISS fixo) × SUA no Simples Anexo IV (DAS,
+    INSS patronal + 11% sobre o pró-labore, IRPF do pró-labore, contabilidade e abertura diluída). A sucumbência integra
+    a base nos dois caminhos. O ponto de virada muda com os seus números — confirme com o seu contador.</p>
+  </div>
+</section>
+
+<!-- ================= CHECKLIST ================= -->
+<section class="sec" id="checklist">
+  <div class="wrap">
+    <h2><span class="tag">Checklist</span>Seus clientes aproveitam crédito?</h2>
+    <p class="intro">O regime dos seus clientes decide o seu. Responda e veja a tendência — é o fluxo de decisão do cap. 7 da cartilha.</p>
+    <div class="quiz" id="quiz">
+      <div class="q" data-q="1"><p>1. Seu cliente típico é empresa no <b>lucro real ou presumido</b>? <span class="hint">(só esses apuram IBS/CBS pelo regime regular e creditam a sua nota — pessoa física e cliente do Simples não)</span></p>
+        <div class="opts"><button data-v="sim">Sim</button><button data-v="nao">Não</button></div></div>
+      <div class="q" data-q="2"><p>2. A receita de <b>sucumbência</b> é relevante (mais de ~15% do total)?</p>
+        <div class="opts"><button data-v="sim">Sim</button><button data-v="nao">Não</button></div></div>
+      <div class="q" data-q="3"><p>3. A receita anual passa do <b>teto do Simples</b> (R$ 4,8 milhões)?</p>
+        <div class="opts"><button data-v="sim">Sim</button><button data-v="nao">Não</button></div></div>
+      <div class="q" data-q="4"><p>4. Sua folha CLT é <b>pequena</b> e as despesas tributadas (tecnologia, imóvel, serviços) são <b>altas</b>?</p>
+        <div class="opts"><button data-v="sim">Sim</button><button data-v="nao">Não</button></div></div>
+    </div>
+    <div class="quiz-result" id="quizResult" hidden></div>
+  </div>
+</section>
+
+<!-- ================= AUTOR ================= -->
+<section class="sec sec-dark" id="autor">
+  <div class="wrap autor">
+    <div>
+      <h2 class="light"><span class="tag tag-y">Quem assina</span>Gustavo Pacher</h2>
+      <p class="sub-light">Advogado tributarista, com atuação em direito tributário empresarial, planejamento na transição
+      da reforma e defesa de honorários da advocacia. Palestrante sobre Reforma Tributária, inovação e estratégia para
+      escritórios e empresas. Esta cartilha é uma iniciativa pessoal e independente, escrita para a realidade catarinense.</p>
+      <div class="cta-row">
+        <a class="btn btn-y" href="https://www.instagram.com/gustavopacher/" target="_blank" rel="noopener">@gustavopacher</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Aviso.</b> Conteúdo exclusivamente didático. Esta página, a cartilha e a calculadora não constituem parecer,
+    consultoria ou recomendação e não devem ser utilizadas, isoladamente, para a tomada de qualquer decisão. Os números são
+    cenários ilustrativos construídos a partir dos atos oficiais vigentes em <b>7/11/2026</b>; a legislação da reforma está
+    em constante alteração. Cada caso exige avaliação individualizada por profissional jurídico e contábil.</p>
+    <p class="foot-brand">Reforma Tributária e Advocacia · Edição pessoal · nov/2026 — <b>Gustavo Pacher</b> ·
+    <a href="https://www.instagram.com/gustavopacher/" target="_blank" rel="noopener">@gustavopacher</a></p>
+  </div>
+</footer>
+
+<!-- ================= RELATÓRIO (só impressão) ================= -->
+<div id="report" class="report" aria-hidden="true"></div>
+
+<script src="calc.js?v=3"></script>
+<script src="app.js?v=4"></script>
+</body>
+</html>
